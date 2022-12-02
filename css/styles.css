@@ -3,37 +3,103 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: white;
-}
-
-body{
-    margin: 0 auto;
+    background-color: none;
 }
 
 header{
+    background-color: white;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
 }
 
-#divHeader{
+header > div{
     display: flex;
     height: 100%;
     justify-content:space-between;
     align-items: center;
-    width: 80%;
+    width: 70%;
 }
 
-header a, header i{
+a{
     text-decoration: none;
-    margin-left: 10px;
     color: black;
-    font-weight: bold;
     transition: 200ms color;
 }
 
-header a:hover, header i:hover{
+header a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+header i{
+    margin-left: 5px;
+}
+
+.aBarMenu:hover{
     color: rgb(253,187,46);
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+#secMain{
+    display: flex;
+    background-color: rgb(253,187,46);
+    justify-content: center;
+}
+
+#secMain > div{
+    /* background-color: aqua; */
+    width: 70%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin-top: 12%;
+}
+
+#imgProfile{
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+.divBoxSecMain{
+    /* background-color: aqua;
+    border: 1px solid black; */
+    width: 50%;
+    height: 90%;
+    line-height: 40px;
+}
+
+#div1SecMain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div1SecMain div{
+    margin-top: 15px;
+}
+
+#div1SecMain button{
+    /* display: flex; */
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+}
+
+#div1SecMain a{
+    margin-left: 30px;
+}
+#div2SecMain{
+    display: flex;
+    justify-content:end;
+    align-items: center;
 }
