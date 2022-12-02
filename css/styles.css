@@ -1,10 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: none;
 }
+
 
 header{
     background-color: white;
@@ -23,15 +24,15 @@ header > div{
     width: 70%;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    transition: 200ms color;
-}
-
-header a{
+.itemBarMenu{
     margin-left: 10px;
     font-weight: bold;
+}
+
+.aBarMenu{
+    text-decoration: none;
+    color: black;
+    transition: 400ms color;
 }
 
 header i{
@@ -50,7 +51,8 @@ section{
 #secMain{
     display: flex;
     background-color: rgb(253,187,46);
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #secMain > div{
@@ -60,13 +62,6 @@ section{
     /* justify-content: space-around; */
     /* align-items: center; */
     margin-top: 12%;
-}
-
-#imgProfile{
-    height: 330px;
-    width: 330px;
-    border-radius: 50%;
-    border: 10px solid white;
 }
 
 .divBoxSecMain{
@@ -87,19 +82,104 @@ section{
     margin-top: 15px;
 }
 
-#div1SecMain button{
+#btnViewJobs{
     /* display: flex; */
-    height: 40px;
-    width: 120px;
+    text-decoration: none;
+    padding: 10px 20px;
     background-color: black;
     color: white;
+    transition: 400ms all;
 }
 
-#div1SecMain a{
-    margin-left: 30px;
+#btnViewJobs:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
 }
-#div2SecMain{
+
+#contact{
+    margin-left: 30px;
+    color: black;
+    transition: 400ms color;
+}
+
+#contact:hover{
+    color:white;
+}
+
+.arrowCont{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#divContSecMiain{
     display: flex;
-    justify-content:end;
+    justify-content: space-between;
+}
+
+#divFigure{
+    height: 300px;
+    width: 300px;
+    /* background-color: rgb(4, 105, 105); */
+}
+figure{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+#imgProfile{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+figcaption{
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+figure:hover img{
+    -webkit-transform: rotateY(180deg);
+    transition: 200ms;
+}
+
+figure:hover figcaption{
+    display: flex;
+}
+
+#secMain > a {
+    text-decoration: none;
+    color: black;
+}
+
+#arrowDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 70px;
+    transition: 500ms background-color;
+}
+
+#arrowDown:hover{
+    background-color: white;
 }
