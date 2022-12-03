@@ -1,3 +1,10 @@
+/* LETRA GENÉRICA */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@800&display=swap');
+
+/* LETRAS DE MENU PRINCIPAL */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ICONOS DE REDES SOCALES */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
 * {
@@ -6,6 +13,11 @@
     background-color: none;
 }
 
+body{
+        font-family: 'Hind Guntur', sans-serif;
+        font-size: 15px;
+
+}
 
 header{
     background-color: white;
@@ -25,49 +37,54 @@ header > div{
     width: 70%;
 }
 
-.itemBarMenu{
-    margin-left: 10px;
-    font-weight: bold;
+.fonMenu{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
 }
 
-.aBarMenu{
+#nameSec{
+    letter-spacing: 5px;
+}
+
+.itemBarMenu{
+    margin-left: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.aMenu{
     text-decoration: none;
     color: black;
-    transition: 400ms color;
+    transition: 300ms color;
 }
 
 header i{
     margin-left: 5px;
 }
 
-.aBarMenu:hover{
-    color: rgb(253,187,46);
+.aMenu:hover{
+    color: rgb(214,237,23);
 }
 
 section{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 #secMain{
     display: flex;
-    background-color: rgb(253,187,46);
+    background-color: rgb(214,237,23);
     align-items: center;
     flex-direction: column;
 }
 
 #divContSecMiain{
-    /* background-color: aqua; */
     width: 70%;
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
     margin-top: 12%;
 }
 
 .divBoxSecMain{
-    /* background-color: aqua;
-    border: 1px solid black; */
     width: 50%;
     height: 90%;
     line-height: 40px;
@@ -80,32 +97,69 @@ section{
 }
 
 #div1SecMain div{
-    margin-top: 15px;
+    margin-top: 40px;
+}
+
+#h1Job{
+    position: relative;
+    font-size: 40px;
+}
+
+#h1Job:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(214,237,23);
+    border-left: 10px solid rgba(0,0,0,1);
+    animation: viewJob 3s steps(12) infinite;
+}
+
+@keyframes viewJob{
+    44%, 52%{
+        border-left: 10px solid rgba(0,0,0,1);
+    }
+    48%, 56%{
+        border-left: 10px solid rgba(0, 0, 0, 0);
+    }
+    40%, 60%{
+        left:100%;
+        width: 10%;
+        border-left: 10px solid rgba(0, 0, 0, 0);
+    }
+    100%{
+        left: 0%;
+        width: 100%;
+    }
 }
 
 #btnViewJobs{
     /* display: flex; */
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: black;
     color: white;
-    transition: 400ms all;
+    transition: 300ms all;
 }
 
 #btnViewJobs:hover{
     background-color: white;
-    border: 1px solid white;
     color: black;
+    box-shadow: 5px 5px 10px black;
 }
 
 #contact{
     margin-left: 30px;
     color: black;
-    transition: 400ms color;
+    transition: 300ms all;
 }
 
 #contact:hover{
     color:white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
 }
 
 .arrowCont{
@@ -119,71 +173,32 @@ section{
 }
 
 #divFigure{
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
 }
 
-figure{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    top: -10px;
-    left: -10px;
-    border-radius: 50%;
-    border: 10px solid white;
-}
-
-#imgProfile{
+#imgOwn{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-}
-
-figcaption{
-    display: none;
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-    position: absolute;
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    right: 0px;
-}
-
-figure:hover img{
-    -webkit-transform: rotateY(180deg);
-    transition: 200ms;
-}
-
-figure:hover figcaption{
-    display: flex;
-}
-
-#divArrowDown{
-    display: flex;
-    margin-top: 80px;
-    width: 160px;
-}
-
-#arrowDownStyle {
-    text-decoration: none;
-    color: black;
+    border: 12px solid white;
 }
 
 #arrowDown{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-    transition: 500ms background-color;
+    margin-top: 80px;
+    color: black;
+    animation-name: movArrowDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
-#arrowDown:hover{
-    background-color: white;
+@keyframes movArrowDown{
+    from{
+        opacity: 0%;
+        transform: translate(0, 0px);
+    }
+    to{
+        opacity: 100%;
+        transform: translate(0, 30px);
+    }
 }
