@@ -10,17 +10,27 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: none;
+    /* background-color: none; */
+}
+
+.bkgColor1{
+    background-color: white;
+}
+
+.bkgColor2{
+    background-color: rgb(214,237,23);
+}
+
+.bkgColor3{
+    background-color: rgb(245, 245, 245);
 }
 
 body{
         font-family: 'Hind Guntur', sans-serif;
         font-size: 15px;
-
 }
 
 header{
-    background-color: white;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -66,14 +76,14 @@ header i{
     color: rgb(214,237,23);
 }
 
-section{
+section, footer{
     width: 100%;
     height: 100vh;
 }
 
 #secMain{
     display: flex;
-    background-color: rgb(214,237,23);
+    /* background-color: rgb(214,237,23); */
     align-items: center;
     flex-direction: column;
 }
@@ -185,7 +195,7 @@ section{
 }
 
 #arrowDown{
-    margin-top: 80px;
+    margin-top: 75px;
     color: black;
     animation-name: movArrowDown;
     animation-duration: 1s;
