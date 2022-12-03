@@ -9,15 +9,15 @@
 </head>
 <body class="bkgColor1">
     <header class="bkgColor1">
-        <div>
-            <a href="#secMain" id="nameSec" class="aMenu fonMenu"><h1>KERK</h1></a>
+        <div class="formatPanel divHeader">
+            <a href="#secMain" title="Ir al inicio" id="nameSec" class="aMenu fonMenu"><h1>KERK</h1></a>
             <nav>
-                <a href="" class="aMenu itemBarMenu fonMenu">INICIO</a>
-                <a href="" class="aMenu itemBarMenu fonMenu">ACERCA DE</a>
-                <a href="" class="aMenu itemBarMenu fonMenu">SERVICIOS</a>
-                <a href="" class="aMenu itemBarMenu fonMenu">RES1UME</a>
-                <a href="" class="aMenu itemBarMenu fonMenu">PORFOLIO</a>
-                <a href="" class="aMenu itemBarMenu fonMenu">CONTACTO</a>
+                <a href="#secMain" class="aMenu itemBarMenu fonMenu">INICIO</a>
+                <a href="#secKnowMe" class="aMenu itemBarMenu fonMenu">ACERCA DE</a>
+                <a href="#secHowICan" class="aMenu itemBarMenu fonMenu">SERVICIOS</a>
+                <a href="#secCV" class="aMenu itemBarMenu fonMenu">RESUME</a>
+                <a href="#secJobs" class="aMenu itemBarMenu fonMenu">PORFOLIO</a>
+                <a href="#footer" class="aMenu itemBarMenu fonMenu">CONTACTO</a>
             </nav>
             <div>
                 <a href="" class="aMenu"><i class="bi bi-facebook"></i></a>
@@ -28,13 +28,13 @@
     </header>
 
     <section id="secMain" class="bkgColor2">
-        <div id="divContSecMiain">
+        <div id="divContSecMiain" class="formatPanel">
             <div id="div1SecMain" class="divBoxSecMain">
                 <h2>HOLA, SOY FREELANCER</h2>
                 <H1 id="h1Job">DESARROLLADOR WEB</H1>
                 <P>Desde la ciudad de Rawson provincia del Chubut, ARGENTINA.</P>
                 <div>
-                    <a href="" id="btnViewJobs"> Ver mis trabajos</a>
+                    <a href="#secJobs" id="btnViewJobs"> Ver mis trabajos</a>
                     <a href="#footer" id="contact">Contáctame <i class="bi bi-arrow-down-circle arrowCont"></i></a>
                 </div>
             </div>
@@ -45,14 +45,55 @@
         <i id="arrowDown" class="bi bi-arrow-down"></i>
     </section>
 
-    <section id="secKnowMe"></section>
+    <section id="secKnowMe">
+        <div class="formatPanel">
+            <div class="divTitle">
+                <p class="pTitle">Acerca de</p>
+                <h1 class="h1Title">Conóceme mas</h1>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
 
-    <section id="secHowICan" class="bkgColor3"></section>
+    <section id="secHowICan" class="bkgColor3">
+        <div class="formatPanel">
+            <div class="divTitle">
+                <p class="pTitle">¿Que es lo que hago?</p>
+                <h1 class="h1Title">Como puedo ayudarte en tu proximo proyecto</h1>
+            </div>
+        </div>
+    </section>
 
-    <section id="secCV"></section>
+    <section id="secCV">
+        <div class="formatPanel">
+            <div class="divTitle">
+                <p class="pTitle">Resume</p>
+                <h1 class="h1Title">Un resumen de mi currículum</h1>
+            </div>
+        </div>
+    </section>
     
-    <section id="secPortfolio" class="bkgColor3"></section>
+    <section id="secJobs" class="bkgColor3">
+        <div class="formatPanel">
+            <div class="divTitle">
+                <p class="pTitle">Portfolio</p>
+                <h1 class="h1Title">Algunos de mis proyectos más recientes</h1>
+            </div>
+        </div>
+    </section>
 
-    <footer id="footer" class="bkgColor2"></footer>
+    <footer id="footer" class="bkgColor2">
+        <div class="formatPanel">
+        </div>
+    </footer>
 </body>
 </html>
