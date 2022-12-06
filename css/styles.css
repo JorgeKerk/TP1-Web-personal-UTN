@@ -1,5 +1,6 @@
 /* LETRA GENÉRICA */
-@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* LETRAS DE MENU PRINCIPAL */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -25,8 +26,10 @@
 }
 
 body{
-    font-family: 'Hind Guntur', sans-serif;
-    font-size: 15px;
+    /* font-family: 'Hind Guntur', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .formatPanel{
@@ -46,7 +49,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 1PX SOLID black; */
     /* background-color: aquamarine; */
+}
+
+.colorCuad{
+    width: 100%;
+    /* background-color: rgb(255,0,0,0.2); */
 }
 
 .pTitle{
@@ -57,7 +66,7 @@ body{
 
 .h1Title{
     font-size: 40px;
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
     /* background-color: brown; */
 }
 
@@ -132,10 +141,11 @@ section, footer{
 #h1Job:before{
     content: "";
     position: absolute;
-    top:0;
-    left:0;
+    top:0%;
+    left:0%;
     height: 100%;
-    width: 100%;
+    width: 74%;
+    /* border: 1px solid black; */
     background-color: rgb(214,237,23);
     border-left: 10px solid rgba(0,0,0,1);
     animation: viewJob 3s steps(12) infinite;
@@ -149,13 +159,13 @@ section, footer{
         border-left: 10px solid rgba(0, 0, 0, 0);
     }
     40%, 60%{
-        left:100%;
-        width: 10%;
+        left:77%;
+        width: 0%;
         border-left: 10px solid rgba(0, 0, 0, 0);
     }
     100%{
         left: 0%;
-        width: 100%;
+        width: 74%;
     }
 }
 
@@ -224,4 +234,86 @@ section, footer{
         opacity: 100%;
         transform: translate(0, 30px);
     }
+}
+
+/* Sec Know Me */
+.divKnowMe{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+/* Know me ----------------------------------------------------------------------------------------------------- */
+#divMeYear{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+#divMe {
+    /* border: 1px solid blue; */
+    width: 70%;
+}
+
+/* #h1IMe {
+    font-weight: 100;
+} */
+
+#h1NameMe {
+    font-weight: bold;
+    border-bottom: 5px solid rgb(214,237,23);
+}
+
+#divMe h1 {
+    display: inline-flex;
+    margin-bottom: 15px;
+}
+
+#pMe {
+    line-height: 35px
+}
+
+#divYear {
+    /* border: 1px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pYear {
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+#divYearFig {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgb(214,237,23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1YearFig {
+    font-size: 150px;
+}
+/* Date ------------------------------------------------------------------------------------------ */
+#divDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divDateBlk {
+    padding-bottom: 20px;
+}
+
+.dateTitle {
+    color: gray;
+}
+
+.dateDescrip {
+    color: black;
+    font-weight: bold;
 }
