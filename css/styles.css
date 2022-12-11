@@ -67,7 +67,7 @@ body{
 
 .pTitle{
     margin-top: 100px;
-    padding: 5px 10px;
+    padding: 0px 10px;
     background-color: var(--color-bkp2);
 }
 
@@ -209,9 +209,13 @@ section, footer{
 
 @keyframes ampliarImg{
     0%{
+        opacity: 0%;
         height: 0px;
         width: 0px;
         margin-right: 220px;
+    }
+    50%{
+        opacity: 100%;
     }
     100%{
         height: 400px;
@@ -530,8 +534,12 @@ section, footer{
     height: auto;
 }
 
+#contJobs {
+    flex-direction: column;
+}
+
 #divContMenuJobs {
-    display: flex;
+    text-align: center;
 }
 
 input[type=radio] + label {
@@ -550,8 +558,19 @@ input[type=radio]:checked + label{
     border-bottom: 3px solid var(--color-bkp2);
 }
 
-#contJobs {
-    flex-direction: column;
+#details:checked ~ #contImgJobs .jobMarkets,
+#details:checked ~ #contImgJobs .jobVYoutube,
+#details:checked ~ #contImgJobs .jobVVimeo,
+#markets:checked ~ #contImgJobs .jobDetails,
+#markets:checked ~ #contImgJobs .jobVYoutube,
+#markets:checked ~ #contImgJobs .jobVVimeo,
+#vYoutube:checked ~ #contImgJobs .jobDetails,
+#vYoutube:checked ~ #contImgJobs .jobMarkets,
+#vYoutube:checked ~ #contImgJobs .jobVVimeo,
+#vVimeo:checked ~ #contImgJobs .jobDetails,
+#vVimeo:checked ~ #contImgJobs .jobMarkets,
+#vVimeo:checked ~ #contImgJobs .jobVYoutube {
+    display: none;
 }
 
 #contImgJobs {
