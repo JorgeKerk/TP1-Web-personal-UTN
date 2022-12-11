@@ -20,9 +20,18 @@
                 <a href="#footer" class="aMenu itemBarMenu fonMenu">CONTACTO</a>
             </nav>
             <div>
-                <a href="https://www.facebook.com/jorge.kerk" target="_blank" class="aMenu"><i class="bi bi-facebook"></i></a>
-                <a href="https://twitter.com/JorgeKerk" target="_blank" class="aMenu"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.instagram.com/tatokerk/" target="_blank" class="aMenu"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/jorge.kerk" target="_blank" class="aMenu" style="--color-out:gray; --color-in:rgb(0,0,130)">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/JorgeKerk" target="_blank" class="aMenu" style="--color-out:gray; --color-in:rgb(0,0,255)">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/tatokerk/" target="_blank" class="aMenu" style="--color-out:gray; --color-in:rgb(230,0,0)">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/JorgeKerk" target="_blank" class="aMenu" style="--color-out:gray; --color-in:rgb(0,0,0)">
+                    <i class="bi bi-github"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -34,7 +43,7 @@
                 <H1 id="h1Job">DESARROLLADOR WEB</H1>
                 <P>Desde la ciudad de Rawson provincia del Chubut, ARGENTINA.</P>
                 <div>
-                    <a href="#secJobs" id="btnViewJobs"> Ver mis trabajos</a>
+                    <a href="#secJobs" class="formatButtons"> Ver mis trabajos</a>
                     <a href="#footer" id="contact">Contáctame <i class="bi bi-arrow-down-circle arrowCont"></i></a>
                 </div>
             </div>
@@ -267,65 +276,98 @@
 
                     <input type="radio" id="vVimeo" name="opImg" value="vVimeo">
                     <label for="vVimeo" >Videos Vimeo</label>
-                <!-- </div> -->
-            <!-- </div> -->
-                <div id="contImgJobs">
-                    <figure class="imgJobs jobDetails">
-                        <img src="./assets/img/ProyectoDet1.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-file-earmark-text-fill imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Proyecto Detallado 1</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="imgJobs jobMarkets">
-                        <img src="./assets/img/Maquetado1.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-card-image imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Maquetado 1</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="imgJobs jobVYoutube">
-                        <img src="./assets/img/VideoYoutube.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-camera-video-fill imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Video Youtube</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="imgJobs jobVVimeo">
-                        <img src="./assets/img/VideoVimeo.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-camera-video-fill imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Video Vimeo</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="imgJobs jobDetails">
-                        <img src="./assets/img/ProyectoDet2.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-file-earmark-text-fill imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Proyecto Detallado 2</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="imgJobs jobMarkets">
-                        <img src="./assets/img/Maquetado2.jpg" alt="" class="formatImg">
-                        <figcaption>
-                            <i class="bi bi-card-image imgWhatIDo"></i>
-                            <h2 class="h2DescImgJob">Maquetado 2</h2>
-                            <p class="pescImgJob">Categoría</p>
-                        </figcaption>
-                    </figure>
+
+                    <div id="contImgJobs">
+                        <figure class="imgJobs jobDetails">
+                            <img src="./assets/img/ProyectoDet1.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-file-earmark-text-fill imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Proyecto Detallado 1</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="imgJobs jobMarkets">
+                            <img src="./assets/img/Maquetado1.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-card-image imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Maquetado 1</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="imgJobs jobVYoutube">
+                            <img src="./assets/img/VideoYoutube.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-camera-video-fill imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Video Youtube</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="imgJobs jobVVimeo">
+                            <img src="./assets/img/VideoVimeo.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-camera-video-fill imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Video Vimeo</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="imgJobs jobDetails">
+                            <img src="./assets/img/ProyectoDet2.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-file-earmark-text-fill imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Proyecto Detallado 2</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="imgJobs jobMarkets">
+                            <img src="./assets/img/Maquetado2.jpg" alt="" class="formatImg">
+                            <figcaption>
+                                <i class="bi bi-card-image imgWhatIDo"></i>
+                                <h2 class="h2DescImgJob">Maquetado 2</h2>
+                                <p class="pescImgJob">Categoría</p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
 
     <footer id="footer" class="bkgColor2">
         <div class="formatPanel">
+            <div class="divDivContact">
+                <h1>Estemos en contacto</h1>
+                <p>Disfruto debatir nuevos desafíos de proyectos y de diseños. Por favor, comparta tanta información como sea posible para que podamos aprovechar al máximo nuestra primera entrevista.</p>
+                <h2>Vivo en:</h2>
+                <p>Ramón Lista N°608, Rawson (Chubut), ARGENTINA.</p>
+                <H2>Teléfono</H2>
+                <p>(+549) 280 465 9815</p>
+                <div id="divContIconContact">
+                    <a href="https://www.facebook.com/jorge.kerk" target="_blank" class="aFooter" style="--colorIcon:rgb(0,0,130)">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/JorgeKerk" target="_blank" class="aFooter" style="--colorIcon:rgb(0,0,255)">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tatokerk/" target="_blank" class="aFooter" style="--colorIcon:rgb(230,0,0)">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/JorgeKerk" target="_blank" class="aFooter" style="--colorIcon:rgb(0,0,0)">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="divDivContact">
+                <h1>¿Presupuesto?</h1>
+                <form action="formDataContact">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <label for="howCanHelp">¿En que puedo ayudarte?:</label>
+                    <textarea name="howCanHelp" id="howCanHelp" rows="5"></textarea>
+                    <button type="submit" class="formatButtons">Enviar <i class="bi bi-arrow-right-short"></i></button>
+                </form>
+            </div>
         </div>
     </footer>
 </body>

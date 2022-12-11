@@ -101,26 +101,30 @@ header{
     font-size: 20px;
 }
 
-.aMenu{
-    text-decoration: none;
-    color: black;
-    transition: 300ms color ease-in;
-}
-
 header i{
     margin-left: 5px;
 }
 
+.aMenu{
+    text-decoration: none;
+    color: var(--color-out);
+    transition: 300ms ease-in;
+}
+
 .aMenu:hover{
-    color: var(--color-bkp2);
+    color: var(--color-in);
 }
 
 section, footer{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#secMain {
+    height: 100vh;
 }
 
 #div1SecMain{
@@ -168,15 +172,17 @@ section, footer{
                parpadeo 0.3s steps(1) infinite;
 }
 
-#btnViewJobs{
+.formatButtons{
+    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
     padding: 15px 20px;
     background-color: black;
     color: white;
-    transition: 300ms all ease-in;
+    transition: 300ms ease-in;
 }
 
-#btnViewJobs:hover{
+.formatButtons:hover{
     background-color: var(--color-bkp1);
     color: black;
     box-shadow: 5px 5px 10px black;
@@ -185,7 +191,7 @@ section, footer{
 #contact{
     margin-left: 30px;
     color: black;
-    transition: 300ms all ease-in;
+    transition: 300ms ease-in;
 }
 
 #contact:hover{
@@ -355,10 +361,6 @@ section, footer{
 }
 
 /* What I Do ------------------------------------------------------------------------- */
-#secWhatIDo{
-    height: auto;
-}
-
 #contWhatIDo {
     flex-direction: column;
 }
@@ -390,10 +392,6 @@ section, footer{
 }
 
 /* Resume ----------------------------------------------------------------- */
-#secResume {
-    height: auto;
-}
-
 #divContGralResume {
     flex-direction: column;
 }
@@ -514,7 +512,6 @@ section, footer{
 #aButtonDown{
     text-decoration: none;
     color: black;
-    cursor: pointer;
     border: 2px solid black;
     background-color: white;
     padding: 14px 50px;
@@ -531,7 +528,7 @@ section, footer{
 
 /* Portfolio -------------------------------------------------------------- */
 #secJobs {
-    height: auto;
+    padding-bottom: 100px;
 }
 
 #contJobs {
@@ -616,11 +613,98 @@ figcaption {
 }
 
 figure{
-    transition: 100ms all ease-in;
+    transition: 100ms ease-in;
 }
 
 figure:hover figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* footer: Contact ------------------------------------------------------------------------ */
+.divDivContact {
+    width: 50%;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+}
+
+.divDivContact h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.divDivContact p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    margin-right: 80px;
+}
+
+.divDivContact > h1 + p {
+    margin-bottom: 20px;
+}
+
+.divDivContact h2 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.aFooter{
+    margin-right: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: gray;
+    transition: 300ms color ease-in;
+}
+
+.aFooter:hover{
+    color: var(--colorIcon);
+}
+
+#divContIconContact {
+    margin: 30px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    text-decoration: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+form input:focus, form textarea:focus {
+    border-bottom: 2px solid rgba(0,0,0,1);
+}
+
+form textarea {
+    resize: vertical;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+form button {
+    cursor: pointer;
+    width: 150px;
 }
