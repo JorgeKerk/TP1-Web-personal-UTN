@@ -23,15 +23,15 @@
     scroll-behavior: smooth;
 }
 
-.bkgColor1{
+.classBkgColor1{
     background-color: var(--color-bkp1);
 }
 
-.bkgColor2{
+.classBkgColor2{
     background-color: var(--color-bkp2);
 }
 
-.bkgColor3{
+.classBkgColor3{
     background-color: var(--color-bkp3);
 }
 
@@ -42,36 +42,36 @@ body{
     font-size: 18px;
 }
 
-.formatPanel{
+.classFormatPanel{
     width: 85%;
     display: flex;
     height: 100%;
     margin: 0 auto;
 }
 
-.divHeader, #divContSecMiain{
+#divIdHeader, #divIdContSecMiain{
     justify-content:space-between;
     align-items: center;
 }
 
-.divTitle{
+.divClassTitle{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.colorCuad{
+.classColorCuad{
     width: 100%;
 }
 
-.pTitle{
+.pClassTitle{
     margin-top: 100px;
     padding: 0px 10px;
     background-color: var(--color-bkp2);
 }
 
-.h1Title{
+.h1ClassTitle{
     font-size: 40px;
     font-weight: 600;
     padding: 20px 0px 50px 0px;
@@ -86,16 +86,16 @@ header{
     border-bottom: 1px solid var(--color-bkp3);
 }
 
-.fonMenu{
+.classFonMenu{
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
 }
 
-#nameSec{
+#h1IdLogo{
     letter-spacing: 5px;
 }
 
-.itemBarMenu{
+.aClassItemBarMenu{
     margin-left: 15px;
     letter-spacing: 2px;
     font-size: 20px;
@@ -105,13 +105,13 @@ header i{
     margin-left: 5px;
 }
 
-.aMenu{
+.aClassMenu{
     text-decoration: none;
     color: var(--color-out);
     transition: 300ms ease-in;
 }
 
-.aMenu:hover{
+.aClassMenu:hover{
     color: var(--color-in);
 }
 
@@ -123,22 +123,22 @@ section, footer{
     flex-direction: column;
 }
 
-#secMain {
+#secIdMain {
     height: 100vh;
 }
 
-#div1SecMain{
+#divId1secMain{
     line-height: 70px;
     display: flex;
     flex-direction: column;
 }
 
-#div1SecMain > h2 {
+#divId1secMain > h2 {
     font-weight: 300;
     font-size: 35px;
 }
 
-#div1SecMain div{
+#divId1secMain div{
     margin-top: 20px;
 }
 
@@ -160,7 +160,7 @@ section, footer{
     }
 }
 
-#h1Job{
+#h1IdJob{
     text-overflow: clip;
     overflow: hidden;
     white-space: nowrap;
@@ -172,7 +172,7 @@ section, footer{
                parpadeo 0.3s steps(1) infinite;
 }
 
-.formatButtons{
+.classFormatButtons{
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
@@ -182,31 +182,31 @@ section, footer{
     transition: 300ms ease-in;
 }
 
-.formatButtons:hover{
+.classFormatButtons:hover{
+    border-color: var(--color-bkp1);
     background-color: var(--color-bkp1);
     color: black;
     box-shadow: 5px 5px 10px black;
 }
 
-#contact{
+#aIdContact{
     margin-left: 30px;
     color: black;
     transition: 300ms ease-in;
 }
 
-#contact:hover{
+#aIdContact:hover{
     color:var(--color-bkp1);
     text-decoration: none;
     text-shadow: 2px 2px 4px black;
 }
 
-.arrowCont{
+#iIdArrowCont{
     margin-left: 5px;
     font-weight: bold;
 }
 
-#divFigure{
-    height: 400px;
+#divIdFigure{
     width: 400px;
     margin-right: 20px;
     margin-top: -20px;
@@ -216,7 +216,6 @@ section, footer{
 @keyframes ampliarImg{
     0%{
         opacity: 0%;
-        height: 0px;
         width: 0px;
         margin-right: 220px;
     }
@@ -224,21 +223,20 @@ section, footer{
         opacity: 100%;
     }
     100%{
-        height: 400px;
         width: 400px;
         margin-right: 20px;
     }
 }
 
-#imgOwn{
+#imgIdOwn{
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 60rem;
-    border: 12px solid var(--color-bkp1);
+    border: 12px solid  var(--color-bkp1);
 }
 
-#arrowDown{
+#iIdArrowDown{
     margin-top: -60px;
     color: black;
     font-size: 20px;
@@ -259,56 +257,56 @@ section, footer{
 }
 
 /* Sec Know Me */
-.divKnowMe{
+#divIdKnowMe{
     display: flex;
     flex-direction:column;
 }
 
 /* Know me ----------------------------------------------------------------------------------------------------- */
-#divMeYear{
+#divIdMeYear{
     display: flex;
     justify-content: space-between;
 }
 
-#divMe {
+#divIdMe {
     width: 70%;
 }
 
-#h1IMe {
+#h1IdIMe {
     font-weight: 100;
 }
 
-#h1NameMe {
+#h1IdNameMe {
     font-weight: 700;
     border-bottom: 5px solid var(--color-bkp2);
 }
 
-#divMe h1 {
+#divIdMe h1 {
     display: inline-flex;
     margin-bottom: 15px;
 }
 
-#pMe {
+#pIdMe {
     line-height: 35px
 }
 
-#divYear {
+#divIdYear {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#pYear {
+#pIdYear {
     padding-top: 25px;
     font-size: 25px;
 }
 
-#pYear > strong {
+#pIdYear > strong {
     font-weight: 700;
 }
 
-#divYearFig {
+#divIdYearFig {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -318,15 +316,11 @@ section, footer{
     align-items: center;
 }
 
-#pYearFig {
+#pIdYearFig {
     color: rgb(80,80,80);
     font-weight: 500;
     font-size: 150px;
-    
-}
-
-#pYearFig{
-    animation: expandYear 1s;
+    animation: expandYear 2s;
 }
 
 @keyframes expandYear {
@@ -341,130 +335,150 @@ section, footer{
     }
 }
 /* Date ------------------------------------------------------------------------------------------ */
-#divDate {
+#divIdDate {
     display: flex;
     justify-content: space-between;
 }
 
-.divDateBlk {
+.divClassDateBlk {
     padding-top: 50px;
     padding-bottom: 30px;
 }
 
-.dateTitle {
+.pClassDateTitle {
     color: gray;
 }
 
-.dateDescrip {
+.aClassDateDescrip {
     color: black;
     font-weight: bold;
 }
 
 /* What I Do ------------------------------------------------------------------------- */
-#contWhatIDo {
+#divIdContWhatIDo {
     flex-direction: column;
 }
 
-#contBoxWhatIDo {
+#divIdContBoxWhatIDo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.boxWhatIDo {
-    margin: 0px 25px 50px 0px;
+.divClassBoxWhatIDo {
+    padding: 20px 10px 30px 15px;
     text-align: center;
+    transition: 0.5s ease-out;
 }
 
-.imgWhatIDo {
+.divClassBoxWhatIDo:hover {
+    box-shadow: 1px 1px 15px var(--color-bkp2);
+}
+
+.iClassIcon {
     color: var(--color-bkp2);
     font-size: 55px;
 }
 
-.h1WhatIDo {
+.h3ClassWhatIDo {
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-.pWhatIDo {
+.pClassWhatIDo {
     text-align: left;
     color: gray;
     font-size: 17px;
 }
 
 /* Resume ----------------------------------------------------------------- */
-#divContGralResume {
+#divIdContGralResume {
     flex-direction: column;
 }
 
-#divContResume {
+#divIdContResume {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
 }
 
-#divContResume > div {
+#divIdContResume > div {
     width: 100%;
 }
 
-#divContResume h1 {
+#divIdContResume h1 {
     font-weight: 600;
     margin: 23px 0px 23px 0px;
 }
 
-.divBlockResume {
+.divClassBlockResume {
     padding: 0px 15px 0px 16px;
     border-left: 2px solid var(--color-bkp2);
 }
 
-.divBlockResume h2 {
+.divClassBlockResume h2 {
     font-size: 20px;
     font-weight: 500;
     margin: 0px 0px 2px 0px;
+    transition: 0.5s;
 }
 
-.divBlockResume p {
+.divClassBlockResume p {
     font-size: 15px;
     color: rgb(170, 170, 170);
     line-height: 30px;
     padding: 0px 30px 0px 0px;
+    transition: 0.5s;
 }
 
-.divBlockResume > h2 + p {
+.divClassBlockResume > h2 + p {
     color: black;
     margin-bottom: 9px;
 }
 
-.divBlockResume hr {
+.divClassBlockResume hr {
     width: 87%;
     border: none;
     height: 1px;
     background-color: rgba(180, 180, 180, 0.2);
     margin: 20px 0px 20px 0px;
+    transition: 0.5s;
 }
 
-#h1MySkills { 
+.divClassBlockResume:hover h2{
+    text-shadow: 1px 1px 0.1px var(--color-bkp2);
+}
+
+.divClassBlockResume:hover p {
+    color: black;
+}
+
+.divClassBlockResume:hover hr {
+    background-color: black;
+}
+
+#h1IdMySkills { 
     font-weight: 600;
     margin-top: 60px;
 }
 
-#divContGralPBar{
+#divIdContGralPBar{
     display: flex;
     width: 100%;
 }
 
-.divSubContPBar {
+.divClassSubContPBar {
     width: 50%;
 }
 
-.divContPBarr {
+.divClassContPBarr {
     margin: 30px 0px 30px 0px;
     width: 95%;
     display: flex;
     flex-direction: column;
 }
 
-.pPBarr{
+.pClassPBarr{
     font-size: 16px;
     font-weight: 500;
     width: 100%;
@@ -473,18 +487,18 @@ section, footer{
     justify-content: space-between;
 }
 
-.pPBarrPorc {
+.pClassPBarrPorc {
     text-align: right;
 }
 
-.divPBarr{
+.divClassPBarr{
     width: 100%;
     height: 8px;
     background-color: var(--color-bkp4);
     border-radius: 4px;
 }
 
-.hrPBarr {
+.hrClassPBarr {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border: none;
@@ -503,13 +517,13 @@ section, footer{
     }
 }
 
-#divButton {
+#divIdButton {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-#aButtonDown{
+#aIdButtonDown{
     text-decoration: none;
     color: black;
     border: 2px solid black;
@@ -531,11 +545,11 @@ section, footer{
     padding-bottom: 100px;
 }
 
-#contJobs {
+#idContJobs {
     flex-direction: column;
 }
 
-#divContMenuJobs {
+#divIdContMenuJobs {
     text-align: center;
 }
 
@@ -555,28 +569,28 @@ input[type=radio]:checked + label{
     border-bottom: 3px solid var(--color-bkp2);
 }
 
-#details:checked ~ #contImgJobs .jobMarkets,
-#details:checked ~ #contImgJobs .jobVYoutube,
-#details:checked ~ #contImgJobs .jobVVimeo,
-#markets:checked ~ #contImgJobs .jobDetails,
-#markets:checked ~ #contImgJobs .jobVYoutube,
-#markets:checked ~ #contImgJobs .jobVVimeo,
-#vYoutube:checked ~ #contImgJobs .jobDetails,
-#vYoutube:checked ~ #contImgJobs .jobMarkets,
-#vYoutube:checked ~ #contImgJobs .jobVVimeo,
-#vVimeo:checked ~ #contImgJobs .jobDetails,
-#vVimeo:checked ~ #contImgJobs .jobMarkets,
-#vVimeo:checked ~ #contImgJobs .jobVYoutube {
+#details:checked ~ #divIdContImgJobs .jobMarkets,
+#details:checked ~ #divIdContImgJobs .jobVYoutube,
+#details:checked ~ #divIdContImgJobs .jobVVimeo,
+#markets:checked ~ #divIdContImgJobs .jobDetails,
+#markets:checked ~ #divIdContImgJobs .jobVYoutube,
+#markets:checked ~ #divIdContImgJobs .jobVVimeo,
+#vYoutube:checked ~ #divIdContImgJobs .jobDetails,
+#vYoutube:checked ~ #divIdContImgJobs .jobMarkets,
+#vYoutube:checked ~ #divIdContImgJobs .jobVVimeo,
+#vVimeo:checked ~ #divIdContImgJobs .jobDetails,
+#vVimeo:checked ~ #divIdContImgJobs .jobMarkets,
+#vVimeo:checked ~ #divIdContImgJobs .jobVYoutube {
     display: none;
 }
 
-#contImgJobs {
+#divIdContImgJobs {
     margin: 20px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.imgJobs {
+.figureClassImgJobs {
     margin: 10px 20px 10px 0px;
     height: 300px;
     border: 1px solid black;
@@ -584,18 +598,18 @@ input[type=radio]:checked + label{
     cursor: pointer;
 }
 
-.formatImg {
+.imgClassFormatImg {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.h2DescImgJob {
+.h2ClassDescImgJob {
     font-size: 24px;
     font-weight: 600;
 }
 
-.pescImgJob {
+.pClassDescImgJob {
     font-size: 17px;
     font-weight: 300;
 }
@@ -623,36 +637,36 @@ figure:hover figcaption {
 }
 
 /* footer: Contact ------------------------------------------------------------------------ */
-.divDivContact {
+.divClassDivContact {
     width: 50%;
     margin-top: 80px;
     /* border: 1px solid black; */
 }
 
-.divDivContact h1 {
+.divClassDivContact h1 {
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.divDivContact p {
+.divClassDivContact p {
     font-weight: 400;
     font-size: 21px;
     line-height: 38px;
     margin-right: 80px;
 }
 
-.divDivContact > h1 + p {
+.divClassDivContact > h1 + p {
     margin-bottom: 20px;
 }
 
-.divDivContact h2 {
+.divClassDivContact h2 {
     margin-top: 10px;
     font-weight: 600;
     font-size: 21px;
 }
 
-.aFooter{
+.aClassFooter{
     margin-right: 20px;
     font-size: 25px;
     text-decoration: none;
@@ -660,7 +674,7 @@ figure:hover figcaption {
     transition: 300ms color ease-in;
 }
 
-.aFooter:hover{
+.aClassFooter:hover{
     color: var(--colorIcon);
 }
 
@@ -686,7 +700,6 @@ form input {
 }
 
 form input, form textarea {
-    text-decoration: none;
     outline: none;
     font-size: 20px;
     background-color: transparent;
