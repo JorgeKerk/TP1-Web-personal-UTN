@@ -626,10 +626,6 @@ figcaption {
     text-align: center;
 }
 
-figure{
-    transition: 100ms ease-in;
-}
-
 figure:hover figcaption {
     display: flex;
     flex-direction: column;
