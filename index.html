@@ -8,17 +8,24 @@
     <title>KERK Dveloper</title>
 </head>
 <body class="classBkgColor1">
+    <!-- El 'Header' contiene el LOGO, el menú principal, y los accesos a contactos -->
     <header class="classBkgColor1">
+        <!-- 'DIV contenedor del Header' para centrarlo en la pantalla -->
         <div id="divIdHeader" class="classFormatPanel">
-            <h1  id="h1IdLogo" class="aClassMenu classFonMenu">KERK</h1>
+            <!-- 'Logo' -->
+            <h1  id="h1IdLogo" class="classFonMenu">KERK</h1>
+            <!-- FIN 'Logo' -->
+            <!-- 'Menú principal' -->
             <nav>
-                <a href="#secIdMain" class="aClassMenu aClassItemBarMenu classFonMenu">INICIO</a>
-                <a href="#secIdKnowMe" class="aClassMenu aClassItemBarMenu classFonMenu">ACERCA DE</a>
-                <a href="#secIdWhatIDo" class="aClassMenu aClassItemBarMenu classFonMenu">SERVICIOS</a>
-                <a href="#secIdResume" class="aClassMenu aClassItemBarMenu classFonMenu">RESUME</a>
-                <a href="#secIdJobs" class="aClassMenu aClassItemBarMenu classFonMenu">PORTFOLIO</a>
-                <a href="#footerId" class="aClassMenu aClassItemBarMenu classFonMenu">CONTACTO</a>
+                <a href="#secIdMain" class="aClassItemBarMenu classFonMenu">INICIO</a>
+                <a href="#secIdKnowMe" class="aClassItemBarMenu classFonMenu">ACERCA DE</a>
+                <a href="#secIdWhatIDo" class="aClassItemBarMenu classFonMenu">SERVICIOS</a>
+                <a href="#secIdResume" class="aClassItemBarMenu classFonMenu">RESUME</a>
+                <a href="#secIdJobs" class="aClassItemBarMenu classFonMenu">PORTFOLIO</a>
+                <a href="#footerId" class="aClassItemBarMenu classFonMenu">CONTACTO</a>
             </nav>
+            <!-- FIN 'Menú principal' -->
+            <!-- Acceso directo a 'contactos' -->
             <div>
                 <a href="https://www.facebook.com/jorge.kerk" target="_blank" class="aClassMenu" style="--color-out:lightgray; --color-in:rgb(0,0,200)">
                     <i class="bi bi-facebook"></i>
@@ -33,11 +40,17 @@
                     <i class="bi bi-github"></i>
                 </a>
             </div>
+            <!-- FIN 'contactos' -->
         </div>
+        <!-- FIN 'DIV contenedor del Header' -->
     </header>
+    <!-- FIN 'header' -->
 
+    <!-- 'Seccion Principal' -->
     <section id="secIdMain" class="classBkgColor2">
+        <!-- 'DIV seccion Principal' para centrarlo en la pantalla -->
         <div id="divIdContSecMiain" class="classFormatPanel">
+            <!-- 'DIV contenedor principal' que contiene presentación y accesos a Portfolio y Contactos -->
             <div id="divId1secMain">
                 <h2>HOLA, SOY FREELANCER</h2>
                 <H1 id="h1IdJob">DESARROLLADOR WEB</H1>
@@ -47,33 +60,47 @@
                     <a href="#footerId" id="aIdContact">Contáctame <i id="iIdArrowCont" class="bi bi-arrow-down-circle"></i></a>
                 </div>
             </div>
-            <div id="divIdFigure">
-                <img src="./assets/img/Foto_Jorge_Kerk.png" title="Soy JORGE KERK" alt="Imagen de la cara del diseñador" id="imgIdOwn">
-            </div>
+            <!-- FIN 'DIV contenedor principal' -->
+            <!-- 'Imagen personal' -->
+            <img src="./assets/img/Foto_Jorge_Kerk.png" title="Soy JORGE KERK" alt="Imagen de la cara del diseñador" id="imgIdOwn">
         </div>
+        <!-- FIN 'DIV seccion Principal' -->
+        <!-- 'Flecha que indica moverse hacia abajo' -->
         <i id="iIdArrowDown" class="bi bi-arrow-down"></i>
     </section>
+    <!-- FIN 'Seccion Principal' -->
 
+    <!-- 'Sección Acerca de' -->
     <section id="secIdKnowMe">
+        <!-- 'DIV seccion acerca de' para centrarlo en la pantalla -->
         <div id="divIdKnowMe" class="classFormatPanel">
+            <!-- 'DIV de subtitulo y titulo' -->
             <div class="divClassTitle">
                 <p class="pClassTitle">Acerca de</p>
                 <h1 class="h1ClassTitle">Conóceme mas</h1>
             </div>
-            <div id="divIdMeYear" class="classColorCuad">
+            <!-- FIN 'DIV de subtitulo y titulo' -->
+            <!-- 'DIV presentación y año' -->
+            <div id="divIdMeYear">
+                <!-- 'DIV presentación' -->
                 <div id="divIdMe">
                     <h1 id="h1IdIMe">Hola, soy</h1>
                     <h1 id="h1IdNameMe">Jorge KERK</h1>
                     <p id="pIdMe">Soy un diseñador y desarrollador apasionado por el diseño web. Disfruto desarrollando sitios web simples, limpios y elegantes que brindan un valor real al usuario final. Mi objetivo es dar resultados excepcionales, ademas de entregar el trabajo dentro del tiempo y el presupuesto que cumpla con los requisitos del cliente.</p>
                 </div>
+                <!-- FIN 'DIV presentación' -->
+                <!-- 'DIV año' -->
                 <div id="divIdYear">
                     <div id="divIdYearFig">
                         <p id="pIdYearFig">16</p>
                     </div>
                     <p id="pIdYear">Años de <strong>Experiencia</strong></p>
                 </div>
+                <!-- FIN 'DIV año' -->
             </div>
-            <div id="divIdDate" class="classColorCuad">
+            <!-- FIN 'DIV presentación y año' -->
+            <!-- 'DIV detalles personales ' -->
+            <div id="divIdDate">
                 <div class="divClassDateBlk">
                     <p class="pClassDateTitle">Nombre:</p>
                     <p class="aClassDateDescrip">Jorge KERK</p>
@@ -91,108 +118,153 @@
                     <p class="aClassDateDescrip">Chubut, ARGENTINA</p>
                 </div>
             </div>
+            <!-- FIN 'DIV detalles personales ' -->
         </div>
+        <!-- FIN 'DIV seccion acerca de' -->
     </section>
+    <!-- FIN 'Sección Acerca de' -->
 
+    <!-- 'Seccion Servicios' -->
     <section id="secIdWhatIDo" class="classBkgColor3">
+        <!-- 'DIV Seccion Servicios' para centrarlo en la pantalla -->
         <div id="divIdContWhatIDo" class="classFormatPanel">
-            <div>
-                <div class="divClassTitle">
-                    <p class="pClassTitle">¿Que es lo que hago?</p>
-                    <h1 class="h1ClassTitle">Como puedo ayudarte en tu proximo proyecto</h1>
-                </div>
+            <!-- 'DIV de subtitulo y titulo' -->
+            <div class="divClassTitle">
+                <p class="pClassTitle">¿Que es lo que hago?</p>
+                <h1 class="h1ClassTitle">Como puedo ayudarte en tu proximo proyecto</h1>
             </div>
+            <!-- FIN 'DIV de subtitulo y titulo' -->
+            <!-- 'DIV contenedor de servicios' -->
             <div id="divIdContBoxWhatIDo">
+                <!-- 'DIV Servicio 1' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-palette iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Diseño Gráfico</h3>
                     <p class="pClassWhatIDo">Me especializo en realizar diseños  de imágenes personalizadas para que sus proyectos sean originales, simples y atractivos.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 1' -->
+                <!-- 'DIV Servicio 2' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-display-fill iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Diseño Web</h3>
                     <p class="pClassWhatIDo">Junto con el Diseño Gráfico y sus requerimientos específicos, lograremos que su Diseño Web sea óptimo para una mejor atención de sus clientes.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 2' -->
+                <!-- 'DIV Servicio 3' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-cursor iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Desarrollo Web</h3>
                     <p class="pClassWhatIDo">Desarrollaré su Web de forma eficiente, ágil y eficaz, de tal manera que nos garantice cualquier tipo de cambios o adaptación en el futuro.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 3' -->
+                <!-- 'DIV Servicio 4' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-file-code-fill iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Progrsamación Adicional</h3>
                     <p class="pClassWhatIDo">Se pueden realizar programas adicionales que se comuniquen con su sistema integral y de esta manera garantizar que su información esté actualizada.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 4' -->
+                <!-- 'DIV Servicio 5' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-database-check iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Gestión de Base de Datos</h3>
                     <p class="pClassWhatIDo">Optimizaré y agilizaré sus Bases de Datos para obtener un mejor rendimiento y tiempo de respuesta en sus proyectos. Podrá obtener informacion a nivel gerencial para la toma de deciciones.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 5' -->
+                <!-- 'DIV Servicio 6' -->
                 <div class="divClassBoxWhatIDo">
                     <i class="bi bi-volume-up-fill iClassIcon"></i>
                     <h3 class="h3ClassWhatIDo">Marketing Digital</h3>
                     <p class="pClassWhatIDo">Puedo realizar el Marketing Digital de su proyecto si así lo desea. Esto le dará nuevos clientes y abrirá sus fronteras en el mercado competitivo.</p>
                 </div>
+                <!-- FIN 'DIV Servicio 6' -->
             </div>
-    </div>
+            <!-- FIN 'DIV contenedor de servicios' -->
+        </div>
+        <!-- FIN 'DIV Seccion Servicios' -->
     </section>
+    <!-- FIN 'Seccion Servicios' -->
 
+    <!-- 'Seccion Resume' -->
     <section id="secIdResume">
+        <!-- 'DIV Seccion Resume' para centrarlo en la pantalla -->
         <div id="divIdContGralResume" class="classFormatPanel">
+            <!-- 'DIV de subtitulo y titulo' -->
             <div class="divClassTitle">
                 <p class="pClassTitle">Resume</p>
                 <h1 class="h1ClassTitle">Un resumen de mi currículum</h1>
             </div>
-
+            <!-- FIN 'DIV de subtitulo y titulo' -->
+            <!-- 'DIV mi educación y mi experiencia' -->
             <div id="divIdContResume">
+                <!-- 'DIVS de subtitulos' -->
                 <div>
                     <h1>Mi Educación</h1>
                 </div>
                 <div>
                     <h1>Mi Experiencia</h1>
                 </div>
+                 <!-- FIN 'DIVS de subtitulos' -->
+                <!-- 'DIV Educacion 3' -->
                 <div class="divClassBlockResume">
-                    <h2>Trabajos independientes</h2>
-                    <p>Distintas organizaciones / 1996 - 2006</p>
-                    <p>He desarrollado software para Financieras, casas de alquiler de películas, obras sociales, partidos políticos y otros.</p>
+                    <h2>Desarrollador Web Full Stack</h2>
+                    <p>UTN y Soy Henry / 2022 - Actualidad</p>
+                    <p>Estoy realizando estos dos (2) cursos para optimizar el aprendizaje en Desarrollo Web y adquirir nuevas técnicas de programación.</p>
                     <hr>
                 </div>
-                <div class="divClassBlockResume">
-                    <h2>Administrador de Base de Datos</h2>
-                    <p>A.M.E.P. / 2001 - 2003</p>
-                    <p>Aprendí a administrar la Base de Datos SQL Server y adquirí experiencia en nuevos lenguajes de programación.</p>
-                    <hr>
-                </div>
-                <div class="divClassBlockResume">
-                    <h2>Analista Programador Universitario</h2>
-                    <p>U.N.P.S.J.B. / 1996 - 2006</p>
-                    <p>Adquirí la habilidad de programar en cualquier tipo de lenguaje asentando las bases de la programación.</p>
-                    <hr>
-                </div>
+                <!-- FIN 'DIV Educacion 3' -->
+                <!-- 'DIV Experiencia 3' -->
                 <div class="divClassBlockResume">
                     <h2>Desarrollador de Software</h2>
                     <p>Coop. Serv. Púb. Cons y Viv. Rw. Ltda. / 2006 - Actualidad</p>
                     <p>He actualizado el sistema integral a nivel Software y Hardware. Adquirí experiencia en trabajos grupales y aptitudes de liderazgo.</p>
                     <hr>
                 </div>
+                <!-- FIN 'DIV Experiencia 3' -->
+                <!-- 'DIV Educacion 2' -->
+                <div class="divClassBlockResume">
+                    <h2>Analista Programador Universitario</h2>
+                    <p>U.N.P.S.J.B. / 1996 - 2006</p>
+                    <p>Adquirí la habilidad de programar en cualquier tipo de lenguaje asentando las bases de la programación.</p>
+                    <hr>
+                </div>
+                <!-- FIN 'DIV Educacion 2' -->
+                <!-- 'DIV Experiencia 2' -->
+                <div class="divClassBlockResume">
+                    <h2>Administrador de Base de Datos</h2>
+                    <p>A.M.E.P. / 2001 - 2003</p>
+                    <p>Aprendí a administrar la Base de Datos SQL Server y adquirí experiencia en nuevos lenguajes de programación.</p>
+                    <hr>
+                </div>
+                <!-- FIN 'DIV Experiencia 2' -->
+                <!-- 'DIV Educacion 1' -->
                 <div class="divClassBlockResume">
                     <h2>Técnico en electrónica</h2>
                     <p>Escuela Politécnica N°702 / 1990 - 1996</p>
                     <p>He desarrollado la habilidad de programar en software de bajo nivel y combinarlo con hardware realizado por mí.</p>
                     <hr>
                 </div>
+                <!-- FIN 'DIV Educacion 1' -->
+                <!-- 'DIV Experiencia 1' -->
                 <div class="divClassBlockResume">
-                    <h2>Desarrollador Web Full Stack</h2>
-                    <p>UTN y Soy Henry / Actualidad</p>
-                    <p>Estoy realizando estos dos (2) cursos para optimizar el aprendizaje en Desarrollo Web y adquirir nuevas técnicas de programación.</p>
+                    <h2>Trabajos independientes</h2>
+                    <p>Distintas organizaciones / 1996 - 2006</p>
+                    <p>He desarrollado software para Financieras, casas de alquiler de películas, obras sociales, partidos políticos y otros.</p>
                     <hr>
                 </div>
+                <!-- FIN 'DIV Experiencia 1' -->
             </div>
+            <!-- FIN 'DIV mi educación y mi experiencia' -->
+            <!-- 'DIV mis habilidades' -->
             <div>
                 <h1 id="h1IdMySkills">Mis Habilidades</h1>
             </div>
+            <!-- FIN 'DIV mis habilidades' -->
+            <!-- 'DIV contenedor barras de habilidades' -->
             <div id="divIdContGralPBar">
+                <!-- 'DIV subcontenedor 1' barras de habilidades x 3 -->
                 <div class="divClassSubContPBar">
+                    <!-- 'DIV barra de habilidades 1' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>Diseño Web</p>
@@ -202,6 +274,8 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:68%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 1' -->
+                    <!-- 'DIV barra de habilidades 2' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>HTML/CSS</p>
@@ -211,6 +285,8 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:85%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 2' -->
+                    <!-- 'DIV barra de habilidades 3' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>JavaScript</p>
@@ -220,8 +296,12 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:98%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 3' -->
                 </div>
+                <!-- FIN 'DIV subcontenedor 1' -->
+                <!-- 'DIV subcontenedor 2' barras de habilidades x 3 -->
                 <div  class="divClassSubContPBar">
+                    <!-- 'DIV barra de habilidades 4' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>React JS</p>
@@ -231,6 +311,8 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:70%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 4' -->
+                    <!-- 'DIV barra de habilidades 5' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>Angular JS</p>
@@ -240,6 +322,8 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:60%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 5' -->
+                    <!-- 'DIV barra de habilidades 6' -->
                     <div class="divClassContPBarr">
                         <div class="pClassPBarr">
                             <p>Bootstrap</p>
@@ -249,20 +333,32 @@
                             <hr class="hrClassPBarr" style="--whidthPBarr:85%">
                         </div>
                     </div>
+                    <!-- FIN 'DIV barra de habilidades 6' -->
                 </div>
+                <!-- 'DIV subcontenedor 2' -->
             </div>
+            <!-- FIN 'DIV contenedor barras de habilidades' -->
+            <!-- 'DIV botón CV' -->
             <div id="divIdButton">
                 <a id="aIdButtonDown" href="./assets/files/Curriculum-JORGE-KERK.pdf" download="Curriculum-JORGE-KERK.pdf">Descargar CV</a>
             </div>
+            <!-- FIN 'DIV botón CV' -->
         </div>
+        <!-- FIN 'DIV Seccion Resume' -->
     </section>
-    
+    <!-- FIN 'Seccion Resume' -->
+
+    <!-- 'Seccion Portfolio' -->
     <section id="secIdJobs" class="classBkgColor3">
+        <!-- 'DIV Seccion Portfolio' para centrarlo en la pantalla -->
         <div id="idContJobs" class="classFormatPanel">
+            <!-- 'DIV contenedor de titulos, submenú e imágenes' -->
             <div class="divClassTitle">
                 <p class="pClassTitle">Portfolio</p>
                 <h1 class="h1ClassTitle">Algunos de mis proyectos más recientes</h1>
+                <!-- 'DIV contenedor de submenú e imágenes' -->
                 <div id="divIdContMenuJobs">
+                    <!-- 'Submenú' -->
                     <input type="radio" id="all" name="opImg" value="all"
                     checked>
                     <label for="all" >Todo</label>
@@ -278,64 +374,85 @@
 
                     <input type="radio" id="vVimeo" name="opImg" value="vVimeo">
                     <label for="vVimeo" >Videos Vimeo</label>
-
+                    <!-- FIN 'Submenú' -->
+                    <!-- 'DIV Imagenes' de trabajos -->
                     <div id="divIdContImgJobs">
+                        <!-- 'Imagen de trabajo 1' -->
                         <figure class="figureClassImgJobs jobDetails">
-                            <img src="./assets/img/ProyectoDet1.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/ProyectoDet1.jpg" alt="Imagen de Proyecto Detallado 1" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-file-earmark-text-fill iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Proyecto Detallado 1</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 1' -->
+                        <!-- 'Imagen de trabajo 2' -->
                         <figure class="figureClassImgJobs jobMarkets">
-                            <img src="./assets/img/Maquetado1.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/Maquetado1.jpg" alt="Imagen de Maquetado 1" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-card-image iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Maquetado 1</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 2' -->
+                        <!-- 'Imagen de trabajo 3' -->
                         <figure class="figureClassImgJobs jobVYoutube">
-                            <img src="./assets/img/VideoYoutube.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/VideoYoutube.jpg" alt="Imagen de Videos Youtube" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-camera-video-fill iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Video Youtube</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 3' -->
+                        <!-- 'Imagen de trabajo 4' -->
                         <figure class="figureClassImgJobs jobVVimeo">
-                            <img src="./assets/img/VideoVimeo.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/VideoVimeo.jpg" alt="Imagen de Videos Vimeo" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-camera-video-fill iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Video Vimeo</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 4' -->
+                        <!-- 'Imagen de trabajo 5' -->
                         <figure class="figureClassImgJobs jobDetails">
-                            <img src="./assets/img/ProyectoDet2.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/ProyectoDet2.jpg" alt="Imagen de Proyecto Detallado 2" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-file-earmark-text-fill iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Proyecto Detallado 2</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 5' -->
+                        <!-- 'Imagen de trabajo 6' -->
                         <figure class="figureClassImgJobs jobMarkets">
-                            <img src="./assets/img/Maquetado2.jpg" alt="" class="imgClassFormatImg">
+                            <img src="./assets/img/Maquetado2.jpg" alt="Imagen de Maquetado 2" class="imgClassFormatImg">
                             <figcaption>
                                 <i class="bi bi-card-image iClassIcon"></i>
                                 <h2 class="h2ClassDescImgJob">Maquetado 2</h2>
                                 <p class="pClassDescImgJob">Categoría</p>
                             </figcaption>
                         </figure>
+                        <!-- FIN 'Imagen de trabajo 6' -->
                     </div>
+                    <!-- FIN 'DIV Imagenes' -->
                 </div>
+                <!-- FIN 'DIV contenedor de submenú e imágenes' -->
             </div>
+            <!-- FIN 'DIV contenedor de titulos, submenú e imágenes' -->
         </div>
+        <!-- FIN 'DIV Seccion Portfolio' -->
     </section>
+    <!-- FIN 'Seccion Portfolio' -->
 
+    <!-- 'Footer' -->
     <footer id="footerId" class="classBkgColor2">
+        <!-- 'DIV Footer' para centrarlo en la pantalla -->
         <div class="classFormatPanel">
+            <!-- 'DIV 1 de contactos' -->
             <div class="divClassDivContact">
                 <h1>Estemos en contacto</h1>
                 <p>Disfruto debatir nuevos desafíos de proyectos y de diseños. Por favor, comparta tanta información como sea posible para que podamos aprovechar al máximo nuestra primera entrevista.</p>
@@ -343,6 +460,7 @@
                 <p>Ramón Lista N°608, Rawson (Chubut), ARGENTINA.</p>
                 <H2>Teléfono</H2>
                 <p>(+549) 280 465 9815</p>
+                <!-- 'DIV contenedor de iconos de contactos' -->
                 <div id="divContIconContact">
                     <a href="https://www.facebook.com/jorge.kerk" target="_blank" class="aClassFooter" style="--colorIcon:rgb(0,0,150)">
                         <i class="bi bi-facebook"></i>
@@ -357,9 +475,13 @@
                         <i class="bi bi-github"></i>
                     </a>
                 </div>
+                <!-- FIN 'DIV contenedor de iconos de contactos' -->
             </div>
+            <!-- FIN 'DIV 1 de contactos' -->
+            <!-- 'DIV 2 de contactos' -->
             <div class="divClassDivContact">
                 <h1>¿Presupuesto?</h1>
+                <!-- 'Formulario de contacto' - solicitud de datos -->
                 <form action="formDataContact">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name">
@@ -369,8 +491,12 @@
                     <textarea name="howCanHelp" id="howCanHelp" rows="5"></textarea>
                     <button type="submit" class="classFormatButtons">Enviar <i class="bi bi-arrow-right-short"></i></button>
                 </form>
+                <!-- FIN 'Formulario de contacto' -->
             </div>
+            <!-- FIN 'DIV 2 de contactos' -->
         </div>
+        <!-- FIN 'DIV Footer' -->
     </footer>
+    <!-- FIN 'Footer' -->
 </body>
 </html>
