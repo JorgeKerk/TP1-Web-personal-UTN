@@ -12,12 +12,13 @@
 /* ICONOS DE 'WHAT I DO' */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
-/* Variables de colores */
+/* Variables */
 :root {
     --color-bkp1: white;
     --color-bkp2: #d6ed17;
     --color-bkp3: rgb(248, 249, 250);
     --color-bkp4: rgb(230, 230, 230);
+    --whidthImgOwn: 400px;
 }
 
 /* Sacamos margin y padding, definimos un scroll suave */
@@ -95,6 +96,11 @@ header{
     height: 60px;
     display: flex;
     border-bottom: 1px solid var(--color-bkp3);
+}
+
+.bi-list {
+    display: none;
+    cursor: pointer;
 }
 
 /* Define alineamientos al Header y a la seccion principal */
@@ -240,7 +246,7 @@ header{
 /* Setea la imagen ademas de su borde y la animación inicial */
 #imgIdOwn{
     object-fit: cover;
-    width: 400px;
+    width: var(--whidthImgOwn);
     border-radius: 50em;
     border: 12px solid  var(--color-bkp1);
     animation: ampliarImg 1.5s ease-out;
@@ -251,13 +257,13 @@ header{
     0%{
         opacity: 0%;
         width: 0px;
-        margin-right: 200px;
+        margin-right: var(--whidthImgOwn)/2;
     }
     50%{
         opacity: 100%;
     }
     100%{
-        width: 400px;
+        width: var(--whidthImgOwn);
     }
 }
 
@@ -326,6 +332,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* Setea la frase 'Año de Experiencia' */
@@ -371,15 +378,26 @@ header{
     }
 }
 
+.divClassDate{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+
+}
+
+/* .divClassDate  + .divClassDateBlk {
+    padding-left: 50px;
+} */
+
 /* Seteo ded los detalles personales */
 #divIdDate {
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
 }
 
 .divClassDateBlk {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 50px 0px 30px 0px;
 }
 
 .pClassDateTitle {
@@ -708,7 +726,7 @@ figcaption {
 
 /* Ejecuta la animacion de Bajar cuadro y lo mantiene visible mientras se posicione el mouse por encima */
 figure:hover figcaption {
-    animation:bajarCuadro 600ms ease-in;
+    animation:bajarCuadro 550ms ease-in;
     top: 0%;
 }
 
@@ -814,6 +832,84 @@ form textarea {
 form button {
     cursor: pointer;
     width: 150px;
+    margin-bottom: 50px;
 }
 /* FIN de formato y efecto del formulario */
 /* FIN FOOTER --------------------------------------------------------------------------------- */
+
+/* REAPONSIVE DESIGN -------------------------------------------------------------------------- */
+@media (max-width:1200px){
+    #divIdContSecMiain{
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    #divId1secMain{
+        margin-top: -70px;
+        line-height: 50px;
+    }
+    #imgIdOwn{
+        --whidthImgOwn: 350px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    #divIdHeader nav, #divIdHeader div{
+        display: none;
+    }
+    .bi-list {
+        display: block;
+    }
+    #divIdDate{
+        flex-direction: row;
+    }
+    .divClassDate{
+        display: flex;
+        flex-direction: column;
+    }
+    #divIdDateBlkDer{
+        align-items: flex-end;
+    }
+    #divIdMeYear{
+        flex-direction: column;
+        align-items: center;
+    }
+    #divIdMe{
+        text-align: center;
+    }
+    #divIdYear{
+        margin-top: 40px;
+    }
+    #divIdContBoxWhatIDo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #divIdContImgJobs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footerId .classFormatPanel {
+        flex-direction: column;
+    }
+    .divClassDivContact{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #divIdContBoxWhatIDo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #divIdContResume {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #divIdContGralPBar {
+       flex-direction: column;
+    }
+    .divClassSubContPBar{
+        width: 100%;
+    }
+    #divIdContImgJobs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
