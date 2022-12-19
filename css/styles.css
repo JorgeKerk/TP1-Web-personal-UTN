@@ -510,8 +510,9 @@ header{
     width: 87%;
     border: none;
     height: 1px;
-    background-color: rgba(180, 180, 180, 0.2);
-    margin: 20px 0px 20px 0px;
+    border-top: 1px solid rgba(180, 180, 180, 0.2);
+    margin-top: 20px;
+    padding-bottom: 20px;
     transition: 0.5s;
 }
 
@@ -524,7 +525,7 @@ header{
 }
 
 .divClassBlockResume:hover hr {
-    background-color: black;
+    border-top: 1px solid black;
 }
 /* FIN del seteo de los DIVS de experiencia y educación */
 
@@ -857,6 +858,30 @@ form button {
     #divIdHeader nav, #divIdHeader div{
         display: none;
     }
+
+    /* #divIdHeader nav, #divIdHeader div{
+        height: 50vh;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #divIdHeader nav{
+        top: 0;
+        border-bottom: 2px solid white;
+    }
+    #divIdHeader div{
+        top: 50vh;
+    }
+    #divIdHeader i, #divIdHeader a{
+        color: white;
+        font-size: 30px;
+    } */
+
     .bi-list {
         display: block;
     }
@@ -911,5 +936,18 @@ form button {
     }
     #divIdContImgJobs {
         grid-template-columns: repeat(1, 1fr);
+    }
+    #imgIdOwn{
+        --whidthImgOwn: 300px;
+        margin-top: 40px;
+    }
+    #h1IdJob{
+        font-size: 30px;
+    }
+    #divId1secMain > h2{
+        font-size: 20px;
+    }
+    #divId1secMain > p{
+        font-size: 15px;
     }
 }
