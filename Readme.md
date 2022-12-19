@@ -9,16 +9,16 @@ Este proyecto consiste en el desarrollo de una página web con mis últimos trab
 
 **Descricpión:**
 Dentro de la página se encontrará con las siguientes secciones
-> [:fa-play-circle: Inicio:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdMain "Inicio:") es una presentación inicial de la página web.
+> [Inicio:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdMain "Inicio:") es una presentación inicial de la página web.
 > 
-> [:fa-info-circle: Acerca de:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdKnowMe "Acerca de") una breve descripcion sobre mí y mi trabajo.
+> [Acerca de:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdKnowMe "Acerca de") una breve descripcion sobre mí y mi trabajo.
 > 
-> [:fa-question-circle: Servicios:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdWhatIDo "Servicios:") describo brevemente los distinos servicios que le puedo ofrecer.
+> [Servicios:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdWhatIDo "Servicios:") describo brevemente los distinos servicios que le puedo ofrecer.
 > 
->[:fa-pencil-square-o: Resume:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdResume "Resume") en esta sección podrá ver ***mi educación***, **mi experiencia** y **mis habilidades** además de poder decargar mi **CV** si fuere necesario.
+>[Resume:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdResume "Resume") en esta sección podrá ver ***mi educación***, **mi experiencia** y **mis habilidades** además de poder decargar mi **CV** si fuere necesario.
 >
->[:fa-picture-o: Portfolio:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdJobs "Portfolio") encontrarás mis últimos proyectos y podras filtarlos según el tema de su interés.
+>[Portfolio:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#secIdJobs "Portfolio") encontrarás mis últimos proyectos y podras filtarlos según el tema de su interés.
 >
->[:fa-envelope-o: Contacto:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#footerId "Contacto") podrá contactarse conmigo por redes sociales o enviandome un mensaje personalizado.
+>[Contacto:](https://jorgekerk.github.io/TP1-Web-personal-UTN/#footerId "Contacto") podrá contactarse conmigo por redes sociales o enviandome un mensaje personalizado.
 
 Espero que esta página le sea de su agrado y de su utilidad, lo saludo cordialmente ***JORGE KERK***.
