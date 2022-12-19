@@ -859,29 +859,6 @@ form button {
         display: none;
     }
 
-    /* #divIdHeader nav, #divIdHeader div{
-        height: 50vh;
-        width: 100vw;
-        position: fixed;
-        left: 0;
-        background-color: rgba(0,0,0,0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    #divIdHeader nav{
-        top: 0;
-        border-bottom: 2px solid white;
-    }
-    #divIdHeader div{
-        top: 50vh;
-    }
-    #divIdHeader i, #divIdHeader a{
-        color: white;
-        font-size: 30px;
-    } */
-
     .bi-list {
         display: block;
     }
