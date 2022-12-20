@@ -257,7 +257,7 @@ header{
     0%{
         opacity: 0%;
         width: 0px;
-        margin-right: var(--whidthImgOwn)/2;
+        margin-right: calc(var(--whidthImgOwn)/2);
     }
     50%{
         opacity: 100%;
