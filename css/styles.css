@@ -385,10 +385,6 @@ header{
 
 }
 
-/* .divClassDate  + .divClassDateBlk {
-    padding-left: 50px;
-} */
-
 /* Seteo ded los detalles personales */
 #divIdDate {
     /* width: 100%; */
@@ -678,7 +674,7 @@ input[type=radio]:checked + label{
 #divIdContImgJobs {
     margin: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Setea el contenedor de cada imágen del portfolio */
@@ -687,7 +683,7 @@ input[type=radio]:checked + label{
     height: 300px;
     border: 1px solid black;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
     overflow: hidden;
 }
 
@@ -741,6 +737,15 @@ figure:hover figcaption {
         top: 0%;
         border-bottom: 5px solid var(--color-bkp2);
     }
+}
+
+figcaption a {
+    text-decoration: none;
+    color: white;
+}
+
+figcaption a:hover {
+    color: var(--color-bkp2);
 }
 /* FIN SECCION PORTFOLIO --------------------------------------------------------------------- */
 
@@ -851,6 +856,7 @@ form button {
     }
     #imgIdOwn{
         --whidthImgOwn: 350px;
+        width: var(--whidthImgOwn);
         margin-top: 40px;
     }
 }
@@ -944,7 +950,8 @@ form button {
         grid-template-columns: repeat(1, 1fr);
     }
     #imgIdOwn{
-        --whidthImgOwn: 300px;
+        --whidthImgOwn: 250px;
+        width: var(--whidthImgOwn);
         margin-top: 40px;
     }
     #h1IdJob{
